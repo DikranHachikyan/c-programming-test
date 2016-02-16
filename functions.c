@@ -9,6 +9,6 @@
 void showMessage()
 {
 
- fputs(stdout,"Show message");
+ fputs("Show message",stdout);
 
 }
