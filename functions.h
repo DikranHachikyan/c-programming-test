@@ -12,7 +12,9 @@ typedef enum{
     SUCCESS
 } RET;
 
+void openFile(FILE *,char *);
+
 void showMessage();
 
-FILE *createNewFile(char *fileName);
+FILE *createNewFile(char *);
 #endif

@@ -8,6 +8,7 @@
 *
 *
 /*******************************************************************/
+
 RET  saveFile(FILE *fn, char *buffer)
 {
     assert(fn != NULL);
@@ -17,6 +18,13 @@ RET  saveFile(FILE *fn, char *buffer)
 
     return  RET.SUCEESS;
 }
+
+void openFile(FILE *fn,char *c)
+{
+ //open file
+
+}
+
 FILE *createNewFile(char *fileName)
 {
     FILE *fn = open(fileName,"w");
