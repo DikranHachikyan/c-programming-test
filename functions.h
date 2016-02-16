@@ -7,7 +7,8 @@
 #define FUNCTIONS_H
 #include <stdio.h>
 
+void openFile(FILE *,char *);
 void showMessage();
 
-FILE *createNewFile(char *fileName);
+FILE *createNewFile(char *);
 #endif

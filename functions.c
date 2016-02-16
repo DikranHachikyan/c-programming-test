@@ -6,6 +6,10 @@
 *
 *
 /*******************************************************************/
+void openFile(FILE *fn,char *c)
+{
+ //open file
+}
 FILE *createNewFile(char *fileName)
 {
     FILE *fn = open(fileName,"w");
