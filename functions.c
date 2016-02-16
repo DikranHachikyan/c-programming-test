@@ -1,14 +1,14 @@
 #include <stdio.h>
-
+#include <assert.h>
 /*******************************************************************
 * Show a message in stdout
 *
 *
 *
 /*******************************************************************/
-void showMessage()
+void showMessage( char *msg)
 {
-
- fputs("Show message",stdout);
+ assert(msg != NULL);
+ fputs(msg,stdout);
 
 }

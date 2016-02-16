@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv)
 {
-    showMessage();    
+    showMessage("Hello C\n");    
     return 0;
 }
 
