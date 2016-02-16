@@ -1,11 +1,22 @@
 #include <stdio.h>
 #include <assert.h>
+
+#include <functions.h>
 /*******************************************************************
 * Show a message in stdout
 *
 *
 *
 /*******************************************************************/
+RET  saveFile(FILE *fn, char *buffer)
+{
+    assert(fn != NULL);
+    assert(buffer != NULL );
+    
+    fputs(buffer, fn);
+
+    return  RET.SUCEESS;
+}
 FILE *createNewFile(char *fileName)
 {
     FILE *fn = open(fileName,"w");
