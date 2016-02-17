@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "functions.h"
-
+#include "ui.h"
 int main(int argc, char **argv)
 {
     char choice=' ';
@@ -17,7 +17,7 @@ int main(int argc, char **argv)
                   break;
         case 's': saveFile(f,content);
                   break;
-        default: showMessage("Valid Options:n,o,s\n");
+        default: loadUI(NULL);
     }
 
     showMessage("Hello C\n");    
